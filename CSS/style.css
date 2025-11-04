@@ -2,8 +2,8 @@
 /* ---------------- ESTILOS GENERALES ---------------- */
 body {
   margin: 0;
-  font-family: "Poppins", "Inter", sans-serif, "Montserrat";
-  background: white;
+  font-family: "Montserrat", sans-serif;
+  background: #f2e6cf;
   color: #2a2a2a;
   overflow-x: hidden;
   line-height: 1.6;
