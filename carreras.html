@@ -2,20 +2,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carreras</title>
+    <title>Carreras | Instituto de Enseñanza Superior Dr. Alfredo Loutaif N°6023</title>
     <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <!-- No Editar -->
-    </header>
-    <nav id="contenido">
-        <!-- No Editar -->
+    <div class="logo">
+      <img src="img/logo2.jpeg" alt="Logo del Instituto">
+      <h1>Instituto de Enseñanza Superior Dr. Alfredo Loutaif N°6023</h1>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+        <li><a href="carreras.html"><i class="fa-solid fa-graduation-cap"></i> Carreras</a></li>
+        <li><a href="incripciones.html"><i class="fa-solid fa-file-pen"></i> Inscripciones</a></li>
+        <li><a href="institucional.html"><i class="fa-solid fa-building-columns"></i> Institucional</a></li>
+        <li><a href="novedades.html"><i class="fa-solid fa-newspaper"></i> Novedades</a></li>
+        <li><a href="contacto.html"><i class="fa-solid fa-envelope"></i> Contacto</a></li>
+      </ul>
     </nav>
+  </header>
+  <main>
+    <section id="intro" aria-labelledby="titulo-intro">
+      <h2 id="titulo-intro">Carreras del Instituto</h2>
+      <p>En esta página encontrarás las carreras ofrecidas por el Instituto, organizadas en <strong>Profesorados</strong> y <strong>Tecnicaturas</strong>. Hacé clic en "Ver más" para ver la ficha completa de cada carrera.</p>
+    </section>
+
+    <!-- PROFESORADOS -->
+    <section id="profesorados" aria-labelledby="titulo-profesorados">
+      <h3 id="titulo-profesorados">Profesorados</h3>
+
+      <!-- Lista de profesorados -->
+      <div class="lista-carreras" role="list" aria-label="Lista de Profesorados">
+        <!-- Ejemplo de ficha -->
+        <article role="listitem" aria-labelledby="p1-titulo" style="border:1px solid #ccc; padding:12px; margin:8px 0;">
+          <h4 id="p1-titulo">Profesorado de Danzas Folclóricas</h4>
+          <p><strong>Resolución:</strong> Res. N° XXXX/XX</p>
+          <p><strong>Duración:</strong> 4 años</p>
+          <p><strong>Modalidad:</strong> Presencial</p>
+          <p class="descripcion">Formación docente orientada a la enseñanza de...</p>
+          <p><a href="folklore.html">Ver más</a></p>
+        </article>
+
+        <article role="listitem" aria-labelledby="p2-titulo" style="border:1px solid #ccc; padding:12px; margin:8px 0;">
+          <h4 id="p2-titulo">Profesorado de Educación Especial</h4>
+          <p><strong>Resolución:</strong> Res. N° YYYY/YY</p>
+          <p><strong>Duración:</strong> 4 años</p>
+          <p><strong>Modalidad:</strong> Presencial</p>
+          <p class="descripcion">Descripción breve de la carrera...</p>
+          <p><a href="especial.html">Ver más</a></p>
+        </article>
+
+        <article role="listitem" aria-labelledby="p2-titulo" style="border:1px solid #ccc; padding:12px; margin:8px 0;">
+          <h4 id="p2-titulo">Profesorado de Educación Primaria</h4>
+          <p><strong>Resolución:</strong> Res. N° YYYY/YY</p>
+          <p><strong>Duración:</strong> 4 años</p>
+          <p><strong>Modalidad:</strong> Presencial</p>
+          <p class="descripcion">Descripción breve de la carrera...</p>
+          <p><a href="primaria.html">Ver más</a></p>
+        </article>
+        
+        <article role="listitem" aria-labelledby="p2-titulo" style="border:1px solid #ccc; padding:12px; margin:8px 0;">
+          <h4 id="p2-titulo">Profesorado de Lengua y Literatura</h4>
+          <p><strong>Resolución:</strong> Res. N° YYYY/YY</p>
+          <p><strong>Duración:</strong> 4 años</p>
+          <p><strong>Modalidad:</strong> Presencial</p>
+          <p class="descripcion">Descripción breve de la carrera...</p>
+          <p><a href="lengua.html">Ver más</a></p>
+        </article>
+
+        <!-- Agregá más profesorados siguiendo el mismo patrón -->
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- TECNICATURAS -->
+    <section id="tecnicaturas" aria-labelledby="titulo-tecnicaturas">
+      <h3 id="titulo-tecnicaturas">Tecnicaturas</h3>
+
+      <!-- Lista de tecnicaturas -->
+      <div class="lista-carreras" role="list" aria-label="Lista de Tecnicaturas">
+        <article role="listitem" aria-labelledby="t1-titulo" style="border:1px solid #ccc; padding:12px; margin:8px 0;">
+          <h4 id="t1-titulo">Tecnicatura Superior en Análisis de Sistemas y Desarrollo de Software</h4>
+          <p><strong>Resolución:</strong> Res. N° 0013/23</p>
+          <p><strong>Duración:</strong> 3 años</p>
+          <p><strong>Modalidad:</strong> Presencial</p>
+          <p class="descripcion">La <strong>Tecnicatura Superior en Análisis de Sistemas</strong> forma profesionales competentes para analizar, diseñar, desarrollar e implementar soluciones informáticas que respondan a las necesidades del sector productivo, educativo y de servicios.</p>
+          <p><a href="sistema.html">Ver más</a></p>
+        </article>
+
+        <article role="listitem" aria-labelledby="t2-titulo" style="border:1px solid #ccc; padding:12px; margin:8px 0;">
+          <h4 id="t2-titulo">Tecnicatura Superior en Turismo</h4>
+          <p><strong>Resolución:</strong> Res. N° AAAA/AA</p>
+          <p><strong>Duración:</strong> 3 años</p>
+          <p><strong>Modalidad:</strong> Presencial</p>
+          <p class="descripcion">¿Te apasiona el mundo, sus culturas y la oportunidad de conectar personas con lugares increíbles? 
+          La <strong>Carrera de Turismo</strong> te invita a ser parte de una industria dinámica, compleja y con 
+          un impacto estratégico a nivel global.</p>
+          <p><a href="turismo.html">Ver más</a></p>
+        </article>
+
+        <!-- Agregá más tecnicaturas siguiendo el mismo patrón -->
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- RECURSOS Y ACCESOS RÁPIDOS
+    <section id="recursos" aria-labelledby="titulo-recursos">
+      <h3 id="titulo-recursos">Recursos y accesos rápidos</h3>
+      <ul>
+        <li><a href="inscripciones.html">Inscripciones y requisitos</a></li>
+        <li><a href="calendario.html">Calendario académico</a></li>
+        <li><a href="becas.html">Información sobre becas y ayudas</a></li>
+        <li><a href="contacto.html">Contacto de preinscripción</a></li>
+      </ul>
+    </section>-->
+
+  </main>
     <!-- Agregar contenido-->
      
     <footer>
-        <!-- No Editar -->
+        <div class="footer-info">
+            <p>© 2025 Instituto de Enseñanza Superior Dr. Alfredo Loutaif N°6023. Todos los derechos reservados.</p>
+            <p>Diseño y desarrollo por el equipo del Instituto.</p>
+        </div>
+
+        <div class="footer-redes">
+            <a href="https://web.facebook.com/loutaif6023?locale=es_LA">Facebook</a> |
+            <a href="https://www.instagram.com/loutaiforan/">Instagram</a> |
+            <a href="ies6023-sal.infd.edu.ar/">IES6023 (Pagina Oficial)</a>
+        </div>
     </footer>
 </body>
 </html>
