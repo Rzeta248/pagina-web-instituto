@@ -276,3 +276,7 @@ footer .footer-redes a {
 footer .footer-redes a:hover {
   color: white;
 }
+
+.iconos{
+  filter: invert(100%);
+}
