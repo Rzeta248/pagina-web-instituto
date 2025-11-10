@@ -6,33 +6,45 @@
   <title>Tecnicatura Superior en ... | IES Dr. Alfredo Loutaif N°6023</title>
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .objetivos { margin-top: 10px;
+  padding: 25px 30px;
+  background: #fdfdfd;
+  border-radius: 20px;
+  border-left: #00284d 4px solid;}
+  .objetivos h3{color: #00284d;}
+  .perfil-profesional { margin-top: 10px;
+  padding: 25px 30px;
+  background: #fdfdfd;
+  border-radius: 20px;
+  border-left: #00284d 4px solid;}
+  .perfil-profesional h3{color: #00284d;}
+  .ambitos-desempeno{margin-top: 10px;
+  padding: 25px 30px;
+  background: #fdfdfd;
+  border-radius: 20px;
+  border-left: #00284d 4px solid;}
+  .ambitos-desempeno h3{color: #00284d;}
+
+  </style>
 </head>
 <body>
 
   <header>
     <div class="logo">
-      <img src="img/logo2.jpeg" alt="Logo del Instituto">
+      <img src="IMG/logofinal.png" alt="Logo del Instituto">
       <h1>Instituto de Enseñanza Superior Dr. Alfredo Loutaif N°6023</h1>
     </div>
 
     <nav>
       <ul>
-<<<<<<< HEAD
-        <li><a href="#"><i class="fa-solid fa-house"></i> Inicio</a></li>
-        <li><a href="#"><i class="fa-solid fa-graduation-cap"></i> Carreras</a></li>
-        <li><a href="#"><i class="fa-solid fa-file-pen"></i> Inscripciones</a></li>
-        <li><a href="#"><i class="fa-solid fa-building-columns"></i> Institucional</a></li>
-        <li><a href="#"><i class="fa-solid fa-newspaper"></i> Novedades</a></li>
-        <li><a href="#"><i class="fa-solid fa-images"></i> Galería</a></li>
-        <li><a href="#"><i class="fa-solid fa-envelope"></i> Contacto</a></li>
-=======
         <li><a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
         <li><a href="carreras.html"><i class="fa-solid fa-graduation-cap"></i> Carreras</a></li>
         <li><a href="incripciones.html"><i class="fa-solid fa-file-pen"></i> Inscripciones</a></li>
         <li><a href="institucional.html"><i class="fa-solid fa-building-columns"></i> Institucional</a></li>
         <li><a href="novedades.html"><i class="fa-solid fa-newspaper"></i> Novedades</a></li>
         <li><a href="contacto.html"><i class="fa-solid fa-envelope"></i> Contacto</a></li>
->>>>>>> 850826f8aa866fa87c0661bd21f23d8e02f9c359
+
       </ul>
     </nav>
   </header>
@@ -123,7 +135,7 @@
     <section class="plan-estudios">
       <h3>Plan de Estudios</h3>
     <p>Contenido del plan de estudio de la carrera Tec. Sup. en Análisis de Sistemas y Desarrollo de Software.</p>
-    <table border="1">
+    <table class="diseño_de_tabla">
         <tr>
             <th><b>Unidades curriculares</b></th>
             <th><b>Año</b></th>
@@ -274,7 +286,7 @@
 
     <section>
         <h2>Correlatividades</h2>
-<table border="1">
+<table class="diseño_de_tabla">
 <tbody>
 <tr>
 <td>1.01</td>
@@ -339,7 +351,7 @@
 </tbody>
 </table>
 
-<table border="1">
+<table class="diseño_de_tabla">
 <tbody>
 <tr>
 <br><br><th colspan="4">SEGUNDO AÑO</th>
@@ -413,7 +425,7 @@
 </tbody>
 </table>
 
-<table border="1" style="height: 857px;" width="1028">
+<table class="diseño_de_tabla">
 <tbody>
 <tr>
 <br><br><th colspan="4">TERCER AÑO</th>
@@ -495,32 +507,22 @@
     </section>
 
     <!-- Sección galería -->
-<section class="galeria">
+<section>
   <h3>Galería</h3>
-
-  <!-- Tabla para organizar las imágenes de forma equilibrada -->
-  <table align="center" cellspacing="10">
-    <tr align="center">
-      <td><img src="img/sistemas_img/sis_img1.jpg" alt="Imagen 1" width="220" height="150"></td>
-      <td><img src="img/sistemas_img/sis_img2.jpg" alt="Imagen 2" width="220" height="150"></td>
-      <td><img src="img/sistemas_img/sis_img3.jpg" alt="Imagen 3" width="220" height="150"></td>
-    </tr>
-    <tr align="center">
-      <td><img src="img/sistemas_img/sis_img4.jpg" alt="Imagen 4" width="220" height="150"></td>
-      <td><img src="img/sistemas_img/sis_img5.jpg" alt="Imagen 5" width="220" height="150"></td>
-      <td><img src="img/sistemas_img/sis_img6.jpg" alt="Imagen 6" width="220" height="150"></td>
-    </tr>
-    <tr align="center">
-      <td><img src="img/sistemas_img/sis_img7.jpg" alt="Imagen 4" width="220" height="150"></td>
-      <td><img src="img/sistemas_img/sis_img8.jpg" alt="Imagen 5" width="220" height="150"></td>
-      <td><img src="img/sistemas_img/sis_img9.jpg" alt="Imagen 6" width="220" height="150"></td>
-    </tr>
-  </table>
-</section>
-
+  <div class="galeria">
+    <img src="img/sistemas_img/sis_img1.jpg" alt="Imagen 1" width="220" height="150">
+    <img src="img/sistemas_img/sis_img2.jpg" alt="Imagen 2" width="220" height="150">
+    <img src="img/sistemas_img/sis_img3.jpg" alt="Imagen 3" width="220" height="150">
+      <img src="img/sistemas_img/sis_img4.jpg" alt="Imagen 4" width="220" height="150">
+    <img src="img/sistemas_img/sis_img5.jpg" alt="Imagen 5" width="220" height="150">
+    <img src="img/sistemas_img/sis_img6.jpg" alt="Imagen 6" width="220" height="150">
+    <img src="img/sistemas_img/sis_img7.jpg" alt="Imagen 7" width="220" height="150">
+    <img src="img/sistemas_img/sis_img8.jpg" alt="Imagen 8" width="220" height="150">
+    <img src="img/sistemas_img/sis_img9.jpg" alt="Imagen 9" width="220" height="150">
 
   </div>
 </section>
+
 
 
   </main>
