@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background: #f1f4fa;
+  background: beige;
   color: #2a2a2a;
   overflow-x: hidden;
   line-height: 1.6;
@@ -244,21 +244,154 @@ nav a:hover::after {
 }
 
 /* ---------------- CONTACTO ---------------- */
-#contacto {
-  background-color: #f7f8fc;
-  padding: 80px 20px;
+/* ==== Estilo general de la sección de contacto ==== */
+.contacto-seccion {
+  background: linear-gradient(135deg, #03365fbe, #6ec1e4);
+  color: white;
+  padding: 60px 20px;
   text-align: center;
-  animation: fadeIn 1.2s ease;
 }
 
-#contacto p {
-  margin: 8px 0;
+.contacto-header i {
+  font-size: 2.5em;
+  color: #fff;
+  margin-bottom: 10px;
 }
 
-#contacto iframe {
-  margin-top: 25px;
+.contacto-header h2 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contacto-header p {
+  font-size: 1.1em;
+  color: #e9f3ff;
+  margin-bottom: 40px;
+}
+
+/* ==== Contenido principal ==== */
+.contacto-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+/* ==== Tarjetas de información ==== */
+.contacto-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  min-width: 250px;
+}
+
+.info-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0,0,0,0.3);
+}
+
+.info-card i {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.info-card h3 {
+  margin-bottom: 8px;
+  font-size: 1.2em;
+}
+
+.info-card p {
+  color: #f0f0f0;
+  font-size: 1em;
+}
+
+/* ==== Formulario de contacto ==== */
+.contacto-formulario {
+  background: #ffffff;
+  color: #333;
+  flex: 1;
+  min-width: 300px;
+  max-width: 450px;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.2);
+}
+
+.contacto-formulario h3 {
+  color: #0078d7;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.contacto-formulario input,
+.contacto-formulario textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  transition: 0.3s;
+}
+
+.contacto-formulario input:focus,
+.contacto-formulario textarea:focus {
+  border-color: #0078d7;
+  box-shadow: 0 0 6px rgba(0,120,215,0.3);
+  outline: none;
+}
+
+.contacto-formulario button {
+  width: 100%;
+  padding: 12px;
+  background: #0078d7;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease, transform 0.3s ease;
+}
+
+.contacto-formulario button:hover {
+  background: #005fa3;
+  transform: scale(1.05);
+}
+
+/* ==== Mapa ==== */
+.contacto-mapa {
+  max-width: 900px;
+  margin: 0 auto;
   border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+/* ==== Responsividad ==== */
+@media (max-width: 768px) {
+  .contacto-contenido {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacto-formulario {
+    width: 90%;
+  }
 }
 
 /* ---------------- FOOTER ---------------- */
@@ -371,3 +504,265 @@ section h2 {
       scroll-snap-align: start;
       border-radius: 8px;
     }
+       /* ==== Estilo general de la sección de inscripciones ==== */
+.seccion-inscripciones {
+  background: linear-gradient(135deg, #001855, #001855);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  border-bottom: 5px solid #005fa3;
+}
+
+.encabezado-inscripciones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-size: 2.2em;
+  margin-bottom: 25px;
+}
+
+.encabezado-inscripciones i {
+  color: #fff;
+  animation: brillo 2s infinite alternate;
+}
+
+@keyframes brillo {
+  from { transform: scale(1); opacity: 0.8; }
+  to { transform: scale(1.1); opacity: 1; }
+}
+
+.descripcion-inscripcion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.descripcion-inscripcion .img-info {
+  width: 200px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.descripcion-inscripcion .texto-info {
+  max-width: 600px;
+  text-align: justify;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* ==== Formulario moderno ==== */
+.formulario-moderno {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  max-width: 550px;
+  margin: 50px auto;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 120, 215, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.formulario-moderno:hover {
+  transform: translateY(-5px);
+}
+
+.formulario-moderno h2 {
+  text-align: center;
+  color: #0078d7;
+  margin-bottom: 25px;
+  font-size: 1.8em;
+}
+
+.formulario-moderno .campo {
+  margin-bottom: 20px;
+}
+
+.formulario-moderno label {
+  display: block;
+  margin-bottom: 6px;
+  color: #333;
+  font-weight: 600;
+}
+
+.formulario-moderno input,
+.formulario-moderno select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  transition: 0.3s ease;
+}
+
+.formulario-moderno input:focus,
+.formulario-moderno select:focus {
+  border-color: #0078d7;
+  box-shadow: 0 0 6px rgba(0, 120, 215, 0.3);
+  outline: none;
+}
+
+.formulario-moderno button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0078d7;
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.formulario-moderno button:hover {
+  background-color: #005fa3;
+  transform: scale(1.02);
+}
+
+#mensajeExito {
+  text-align: center;
+  font-weight: bold;
+  color: #28a745;
+  margin-top: 15px;
+}
+
+/* ==== Responsividad ==== */
+@media (max-width: 768px) {
+  .descripcion-inscripcion {
+    flex-direction: column;
+  }
+  .formulario-moderno {
+    width: 90%;
+    padding: 25px;
+  }
+}
+/*--------- APARTADO DE CARRERAS -------------*/
+/* Sección general */
+.carreras-2025 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px auto;
+  width: 95%;
+}
+
+/* Título principal */
+.titulo-principal h2 {
+  background: linear-gradient(120deg, #EBDCB5, #ffffff);
+  color: #001855;
+  font-size: 2.3rem;
+  padding: 15px 35px;
+  border-radius: 15px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Bloque de cada categoría */
+.bloque-formacion {
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(8px);
+  border-radius: 25px;
+  padding: 30px;
+  width: 90%;
+  max-width: 1000px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+  margin-bottom: 40px;
+  animation: aparecer 0.8s ease forwards;
+}
+
+/* Título interno */
+.bloque-formacion h3 {
+  background: #001855;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 15px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Contenedor texto + imagen */
+.contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Lista en forma de tarjetas */
+.bloque-formacion ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.bloque-formacion li {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  padding: 18px 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bloque-formacion li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.bloque-formacion li i {
+  font-size: 1.5rem;
+  color: #001855;
+}
+
+.bloque-formacion a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Imagen decorativa animada */
+.imagen img {
+  width: 200px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  animation: flotar 3s ease-in-out infinite alternate;
+}
+
+@keyframes flotar {
+  from { transform: translateY(0); }
+  to { transform: translateY(-10px); }
+}
+
+/* Animación de aparición */
+@keyframes aparecer {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Adaptación móvil */
+@media (max-width: 768px) {
+  .contenedor {
+    flex-direction: column;
+    align-items: center;
+  }
+  .imagen img {
+    margin-top: 20px;
+    width: 80%;
+  }
+}
