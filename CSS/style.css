@@ -191,8 +191,8 @@ nav a:hover::after {
 
 /* ---------------- NOVEDADES ---------------- */
 #novedades {
-  background: linear-gradient(120deg, #EBDCB5, #ffffff);
-  padding: 80px 20px;
+  /*background: linear-gradient(120deg, #EBDCB5, #ffffff);*/
+  padding: 10px 20px;
   animation: fadeIn 1.2s ease;
 }
 
@@ -217,32 +217,56 @@ nav a:hover::after {
 }
 
 /* ---------------- NOSOTROS ---------------- */
+/* ---- SOBRE NOSOTROS ---- */
+
 #nosotros {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px 20px;
   text-align: center;
-  background-color: white;
-  padding: 80px 20px;
-  animation: fadeIn 1.2s ease;
+}
+
+#nosotros h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
 #nosotros p {
-  max-width: 700px;
-  margin: 0 auto 20px;
-  color: #444;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  line-height: 1.6;
 }
 
-#nosotros a {
-  color: white;
-  background-color: #001855;
+.nosotros-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.nosotros-highlights .item {
+  background: #f2f2f2;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  border-left: 4px solid #004aad; /* color institucional opcional */
+}
+
+.btn-nosotros {
+  display: inline-block;
   padding: 12px 25px;
-  border-radius: 25px;
+  background: #004aad;
+  color: white;
   text-decoration: none;
-  font-weight: 500;
-  transition: all 0.3s ease;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
-#nosotros a:hover {
-  background-color: #3D5AF1;
+.btn-nosotros:hover {
+  background: #00357a;
 }
+
 
 /* ---------------- CONTACTO ---------------- */
 /* ==== Estilo general de la sección de contacto ==== */
@@ -794,6 +818,7 @@ section h2 {
     width: 80%;
   }
 }
+<<<<<<< HEAD
 .galeria h3{
   text-align: center;
   font-size: 2rem;
@@ -801,3 +826,80 @@ section h2 {
   color: #1f4e79;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+=======
+
+/* Noticias */
+
+#noticia img{
+  width: 250px;
+  height: auto;
+  margin-right: 10px;
+}
+
+#noticia {
+  display: flex;
+}
+
+.noticia {
+  display: flex;
+  align-items: stretch;
+}
+
+.slider-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow-x: scroll;
+
+  /* Vamos a añadir esto 👇 */
+  scroll-snap-type: x mandatory;
+}
+
+.slider-container img {
+  flex: 0 0 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  /* Vamos a añadir esto 👇 */
+  scroll-snap-align: center;
+}
+
+/* ---- CONTACTO ---- */
+
+#contacto {
+  padding: 40px 20px;
+  background: #f7f7f7;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 40px auto;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+#contacto p {
+  font-size: 1.1rem;
+  margin: 8px 0;
+  text-align: center;
+}
+
+/* Contenedor responsive del mapa */
+.mapa-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* Proporción 16:9 */
+  border-radius: 12px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+.mapa-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+>>>>>>> 6a5d50acbde721696185c043b17ad637cd1281f4

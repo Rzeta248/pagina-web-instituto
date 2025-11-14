@@ -1,83 +1,205 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Novedades | Instituto de Enseñanza Superior Dr. Alfredo Loutaif N°6023</title>
-    <link rel="icon" href="IMG/logofinal.PNG">
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Novedades | Instituto de Enseñanza Superior Dr. Alfredo Loutaif N°6023</title>
+  <link rel="icon" href="IMG/logofinal.PNG">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- --- NUEVO RESPONSIVE --- -->
+  <style>
+        .noticia {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 22px;
+            align-items: flex-start;
+        }
+        .noticia-img img {
+            width: 220px;
+            height: auto;
+            border-radius: 6px;
+        }
+        .noticia-texto h3 {
+            margin: 0 0 0px 0;
+        }
+
+        .noticia-texto p {
+            margin: 0;
+        }
+      /* --- ESTILOS RESPONSIVE PARA LAS COLUMNAS --- */
+      .novedades-layout {
+          display: grid;
+          grid-template-columns: 1fr; /* Mobile */
+          gap: 24px;
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 20px;
+          box-sizing: border-box;
+      }
+
+      /* PC → 2 columnas */
+      @media (min-width: 900px) {
+          .novedades-layout {
+              grid-template-columns: 2fr 1fr;
+          }
+      }
+
+      /* --- NOTICIAS RESPONSIVE --- */
+      .noticia img {
+          width: 100%;
+          max-width: 250px;
+          height: auto;
+          margin-right: 12px;
+          border-radius: 6px;
+      }
+
+      /* En celular: imagen arriba, texto abajo */
+      @media (max-width: 700px) {
+            .noticia {
+                display: block;
+                text-align: center;
+            }
+
+          .noticia img {
+              float: none !important;
+              display: block;
+              margin: 0 auto 12px auto;
+          }
+          .noticia-img img {
+            width: 90%;
+            max-width: 300px;
+            margin-bottom: 10px;
+          }
+      }
+
+      /* --- PLUGIN FACEBOOK RESPONSIVE --- */
+      .fb-sidebar, .fb-container, .fb-page,
+      .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget iframe {
+          width: 100% !important;
+      }
+  </style>
+  <!-- --- FIN RESPONSIVE --- -->
+
 </head>
 <body>
-    <header>
+  <header>
     <div class="logo">
-        <img src="IMG/logofinal.PNG" alt="Logo del Instituto">
-        <h1>Instituto de Enseñanza Superior Dr. Alfredo Loutaif N°6023</h1>
+      <img src="IMG/logofinal.PNG" alt="Logo del Instituto">
+      <h1>Instituto de Enseñanza Superior Dr. Alfredo Loutaif N°6023</h1>
     </div>
 
     <nav>
-        <ul>
+      <ul>
         <li><a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
         <li><a href="carreras.html"><i class="fa-solid fa-graduation-cap"></i> Carreras</a></li>
         <li><a href="inscripciones.html"><i class="fa-solid fa-file-pen"></i> Inscripciones</a></li>
         <li><a href="institucional.html"><i class="fa-solid fa-building-columns"></i> Institucional</a></li>
-        <li><a href="novedades.html"><i class="fa-solid fa-newspaper"></i> Novedades</a></li>
+        <li><a href="novedades.html" aria-current="page"><i class="fa-solid fa-newspaper"></i> Novedades</a></li>
         <li><a href="contacto.html"><i class="fa-solid fa-envelope"></i> Contacto</a></li>
-        </ul>
+      </ul>
     </nav>
-    </header>
+  </header>
+
+  <main>
     <section id="novedades">
-        <h2>Novedades</h2>
-        <div id="fb-root">
+      <h2>Novedades</h2>
 
-    </div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v24.0&appId=APP_ID"></script>
-    <div class="fb-page" data-href="https://www.facebook.com/loutaif6023?locale=es_LA&amp;_rdc=1&amp;_rdr" data-tabs="timeline" data-width="350" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-      <blockquote cite="https://www.facebook.com/loutaif6023?locale=es_LA&amp;_rdc=1&amp;_rdr" class="fb-xfbml-parse-ignore">
-        <a href="https://www.facebook.com/loutaif6023?locale=es_LA&amp;_rdc=1&amp;_rdr">IES 6023 &quot;Dr. Alfredo Loutaif&quot; ORAN</a>
-      </blockquote>
-    </div>
-        <!-- <div id="noticia1">
-            <img src="IMG/noticia/noticia1.jpg" alt="">
-            <div>
-                <h2>Dia de la Tradición I.E.S. N°6023 “Dr. Alfredo Loutaif</h2>
-                <p>
-                    En el marco del Día de la Tradición, los alumnos del Profesorado de Danzas con orientación en Danzas Folklóricas compartieron su muestra de fin de año “Esencia de lo nuestro”, bajo la dirección de la profesora Florencia Gareca. 
-                    Una jornada llena de emoción, música y danza, donde se puso en valor la identidad, las costumbres y el amor por nuestras raíces. 
-                    ¡Felicitaciones a los estudiantes y docentes por mantener viva la esencia de nuestra cultura!</p>
+      <!-- GRID RESPONSIVE -->
+      <div class="novedades-layout">
+
+        <!-- Columna izquierda -->
+        <div class="novedades-list">
+
+          <!-- Noticia 1 -->
+          <article class="noticia">
+            <div class="noticia-img">
+                <img src="IMG/noticia/noticia1.jpg" alt="">
             </div>
+            <div class="notica-texto">
+            <h3>Día de la Tradición I.E.S. N°6023 “Dr. Alfredo Loutaif”</h3>
+            <p>
+              En el marco del Día de la Tradición, los alumnos del Profesorado de Danzas con orientación
+              en Danzas Folklóricas compartieron su muestra “Esencia de lo nuestro”.
+            </p>
+            </div>
+          </article>
 
+          <!-- Noticia 2 -->
+          <article class="noticia">
+            <div class="noticia-img">
+                <img src="IMG/noticia/noticia2.jpg" alt="">
+            </div>
+            <div class="noticia-texto">
+            <h3>“Los autores van a la escuela” - Cierre de la 5.ª edición</h3>
+            <p>
+              La carrera de Lengua y Literatura celebra el cierre de la quinta edición del Programa
+              Cultural “Los Autores van a la Escuela”.
+            </p>
+            </div>
+          </article>
+
+          <!-- Noticia 3 -->
+          <article class="noticia">
+            <div class="noticia-img">
+                <img src="IMG/noticia/noticia3.jpg" alt="">
+            </div>
+            <div class="noticia-texto">
+            <h3>El carnaval del diablo</h3>
+            <p>
+              Estudiantes de 4º año representaron la tragicomedia "El carnaval del diablo" en la Casa
+              de la Cultura.
+            </p>
+            </div>
+          </article>
         </div>
-        <div id="noticia2">
-            <img src="IMG/noticia/noticia2.jpg" alt="">
-            <div>
-                <h2>LOS AUTORES VAN A LA ESCUELA” - CIERRE DE LA 5.ª EDICIÓN</h2>
-                <p>El Instituto Loutaif, a través de la carrera de Profesorado de Educación Secundaria en Lengua y Literatura, celebra con enorme emoción y gratitud el cierre de la quinta edición del Programa Cultural y Educativo “Los Autores van a la Escuela”, que culminó su recorrido en la ciudad de San Ramón de la Nueva Orán, con una jornada literaria inolvidable desarrollada en la Casa Municipal de la Cultura.</p>
-            </div>
 
-        </div>
-        <div id="noticia3">
-            <img src="IMG/noticia/noticia3.jpg" alt="">
-            <div>
-                <h2>EL CARNAVAL DEL DIABLO</h2>
-                <p>
-                    Estudiantes de 4to año del Profesorado de Educación Secundaria en Lengua y Literatura del seminario Teatro a cargo del Profesor Fabián Vides, representaron el viernes 7 la tragicomedia "El carnaval del diablo" del autor catamarqueño, en la Casa de la Cultura.
-                    La obra centra su historia de amor trágico en los valles calchaquíes, durante el carnaval, explorando elementos como el lenguaje, la música y el vestuario propios de la región.</p>
-            </div>
+        <!-- Columna derecha: Facebook -->
+        <aside class="fb-sidebar">
+          <div id="fb-root"></div>
+          <script async defer crossorigin="anonymous"
+            src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v24.0"></script>
 
-        </div> -->
+          <div class="fb-container">
+            <div class="fb-page"
+              data-href="https://www.facebook.com/loutaif6023"
+              data-tabs="timeline"
+              data-width="420"
+              data-height="700"
+              data-small-header="false"
+              data-adapt-container-width="true"
+              data-hide-cover="false"
+              data-show-facepile="true">
+              <blockquote cite="https://www.facebook.com/loutaif6023" class="fb-xfbml-parse-ignore">
+                <a href="https://www.facebook.com/loutaif6023">IES 6023 "Dr. Alfredo Loutaif" ORAN</a>
+              </blockquote>
+            </div>
+          </div>
+        </aside>
+
+      </div> <!-- fin layout -->
+
     </section>
-    <footer>
+  </main>
+
+  <footer>
     <div class="footer-info">
       <p>© 2025 Instituto de Enseñanza Superior Dr. Alfredo Loutaif N°6023. Todos los derechos reservados.</p>
       <p>Diseño y desarrollo por el equipo del Instituto.</p>
     </div>
-   <div class="footer-redes">
+
     <div class="footer-redes">
-      <img src="IMG/icons8-facebook-50.png" alt="icono_facebook" width="30" class="iconos"><a href="https://web.facebook.com/loutaif6023?locale=es_LA">Facebook</a> |
-      <img src="IMG/icons8-instagram-50.png" alt="icono_instagram" width="30" class="iconos"><a href="https://www.instagram.com/loutaiforan/">Instagram</a> |
-      <img src="IMG/iconoblanco.png" alt="icono_instituto" width="30" class="iconos"><a href="ies6023-sal.infd.edu.ar/">IES6023 (Pagina Oficial)</a>
+      <img src="IMG/icons8-facebook-50.png" width="30" class="iconos">
+      <a href="https://web.facebook.com/loutaif6023?locale=es_LA">Facebook</a> |
+
+      <img src="IMG/icons8-instagram-50.png" width="30" class="iconos">
+      <a href="https://www.instagram.com/loutaiforan/">Instagram</a> |
+
+      <img src="IMG/iconoblanco.png" width="30" class="iconos">
+      <a href="https://ies6023-sal.infd.edu.ar/">IES6023 (Página Oficial)</a>
     </div>
   </footer>
+
 </body>
 </html>
