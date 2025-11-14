@@ -1,34 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Institucional</title>
-  <link rel="stylesheet" href="CSS/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-    .objetivos { margin-top: 10px;
-  padding: 25px 30px;
-  background: #fdfdfd;
-  border-radius: 20px;
-  border-left: #00284d 4px solid;}
-  .objetivos h3{color: #00284d;}
-  .perfil-profesional { margin-top: 10px;
-  padding: 25px 30px;
-  background: #fdfdfd;
-  border-radius: 20px;
-  border-left: #00284d 4px solid;}
-  .perfil-profesional h3{color: #00284d;}
-  .ambitos-desempeno{margin-top: 10px;
-  padding: 25px 30px;
-  background: #fdfdfd;
-  border-radius: 20px;
-  border-left: #00284d 4px solid;}
-  .ambitos-desempeno h3{color: #00284d;}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Institucional</title>
+<link rel="stylesheet" href="CSS/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="icon" href="IMG/logofinal.png">
 
-  </style>
+<style>
+
+/* -----------------------------------
+   DISEÑO GENERAL DE SECCIONES
+-----------------------------------*/
+section {
+  background: #ffffff;
+  padding: 25px;
+  margin: 30px auto;
+  border-radius: 12px;
+  max-width: 950px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  border-bottom: 4px solid #0077cc;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  color: #003566;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* -----------------------------------
+   BANNER SUPERIOR
+-----------------------------------*/
+.banner-institucional img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+/* -----------------------------------
+   HISTORIA: TIMELINE + IMÁGENES
+-----------------------------------*/
+.historia {
+  background: #f2f6ff;
+}
+
+.historia-imgs {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+.historia-imgs img {
+  width: 48%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.timeline {
+  border-left: 4px solid #0077cc;
+  padding-left: 18px;
+  margin-top: 20px;
+}
+.timeline div {
+  margin: 15px 0;
+  position: relative;
+}
+.timeline div span {
+  font-weight: bold;
+  color: #0077cc;
+}
+.timeline div::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #0077cc;
+  border-radius: 50%;
+  position: absolute;
+  left: -25px;
+  top: 5px;
+}
+
+/* -----------------------------------
+   DATOS INSTITUCIONALES INFO-BOX
+-----------------------------------*/
+.datos-institucionales {
+  border-left: 6px solid #003566;
+}
+.datos-institucionales ul {
+  list-style: none;
+  padding: 0;
+}
+.datos-institucionales li {
+  padding: 10px 0;
+  border-bottom: 1px solid #dbe2ea;
+  font-size: 17px;
+}
+
+/* -----------------------------------
+   DIRECTIVOS EN CARDS
+-----------------------------------*/
+.grid-directivos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+.card-persona {
+  padding: 15px;
+  background: #f7faff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* -----------------------------------
+   MISIÓN Y VISIÓN
+-----------------------------------*/
+.mision-vision {
+  background: #eaf7ff;
+  border-left: 6px solid #0077cc;
+}
+.mision-vision p {
+  font-size: 18px;
+}
+.galeria-personal {
+  background: #f7faff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 25px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.galeria-personal h2 {
+  border-bottom: 4px solid #0077cc;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+  color: #003566;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.grid-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.grid-galeria img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.grid-galeria img:hover {
+  transform: scale(1.03);
+}
+
+
+
+</style>
+
 </head>
 <body>
+
 <header>
     <div class="logo">
       <img src="IMG/logofinal.png" alt="Logo del Instituto">
@@ -43,90 +184,141 @@
         <li><a href="institucional.html"><i class="fa-solid fa-building-columns"></i> Institucional</a></li>
         <li><a href="novedades.html"><i class="fa-solid fa-newspaper"></i> Novedades</a></li>
         <li><a href="contacto.html"><i class="fa-solid fa-envelope"></i> Contacto</a></li>
-
       </ul>
     </nav>
-  </header>
+</header>
 
-  <main>
-    
-    <section class="historia">
-    <h2>Historia</h2>
-    <p>El instituto de Enseñanza superior N°6023 Dr. Alfredo Loutaif; Orán, Salta, comenzó a funcionar el 8 de Agosto de 1983 
-        y por resolucion interna se identifica al establecimiento con el nombre Alfredo Loutaif, en virtud de su reciente fallecimiento 
-        y al reconocimiento por su colaboracion y actuacion en el campo educativo, especialmente a nivel Educacion Especial y en la 
-        creación de este instituto de formacion docente. 
-        A partir del 19 de Agosto de 1985 comienza a funcionar en 9 de Julio 786 con dos carreras, desde esa fecha el establecimiento 
-        pasó por diferentes espacios fisicos de diversas instituciones de la ciudad. En 2013 se inaugura el edificio propio en 
-        Salvador Valleri esquina O’Higgins, con actividades en tres turnos y dictando actualmente seis carreras diferentes, cuatro 
-        profesorados y dos tecnicaturas.
-    </p>
+<main>
 
-    <section class="datos-institucionales">
-        <h2>Datos Institucionales</h2>
-        <p><strong>Nombre:</strong> <em> Instituto de Educación Superior N°6023</em></p>
-        <p><strong>Domicilio: </strong> <em> O´higgins esquina C. Salvador Valeri</em></p>
-        <p><strong>Teléfono: </strong> <em> +54 3878 78-5320</em></p>
-        <p><strong>Email:  </strong> <em>formacion6023@hotmail.com</em></p>
-        <p><strong>Horario de atención: </strong> <em>Lunes a Viernes de 7:45 a 23:00 hs</em></p>
-    </section>
+<!-- ===========================
+      BANNER  
+=========================== -->
+<div class="banner-institucional">
+  <img src="IMG/urtubey.jpeg" alt="Foto del instituto">
+</div>
 
-    <section class="directivos">
-        <h2>Directivos</h2>
-        <p><strong>Rectora:</strong> <em> Prof. Andrea Gorena</em></p>
-        <h4><strong>Coordinadores de carreras: </strong></h4>
-        <ul>
-          <li>Profesorado en educacion primaria: <em>Profesora Paola Mercado</em></li>
-          <li>Profesorado en educacion especial <em>Profesora Silvina Lopez</em></li>
-          <li>Profesorado en lengua y literatura: <em>Profesora Maria del Huerto Heredia</em></li>
-          <li>Tecnicatura Superior en Turismo: <em>Maria Mercedes Manzaras</em></li>
-          <li>Tecnicatura Superior en Analisis de Sistemas y desarrollo de software: <em>Profesor Mauricio Parada</em></li>
-        </ul>
-        <h4>Preceptoria:</h4>
-          <ul>
-            <li>Natalia Romero (turno mañana)</li>
-            <li>Alejandra Cazón (turno tarde)</li>
-            <li>Betiana Casasola (turno tarde)</li>
-            <li>Marta Mansilla (turno noche)</li>
-          </ul>
-        <h4>Personal de Maestranza:</h4>
-          <ul>
-            <li>Raúl Baez</li>
-            <li>Elida Segundo</li>
-            <li>Claudio Mansilla</li>
-            <li>Andrea Bermejo</li>
-            <li>Cesar Baez</li>
-            <li>Sonia Chima</li>
-            <li>Gustavo Torres</li> 
-          </ul>
-        <h4>Sereno:</h4>
-          <ul>
-            <li>Adrian Martínez</li>
-          </ul>
-    </section>
-        
+<!-- ===========================
+      HISTORIA  
+=========================== -->
+<section class="historia">
+<h2><i class="fa-solid fa-scroll"></i> Historia</h2>
 
-    <section class="mision-vision">
-        <h2>Misión y Visión</h2>
-        <p><strong>Misión:</strong> Formar profesionales competentes, comprometidos con la educación y el desarrollo social, capaces de contribuir al progreso de la comunidad a través de una educación inclusiva y de calidad.</p>
-        <p><strong>Visión:</strong> Ser un referente en la formación docente y técnica en la región, promoviendo la innovación educativa, la investigación y el compromiso social, para contribuir al desarrollo sostenible y equitativo de la sociedad.</p>
-  
-    </section>
-  </main>
+<p>El instituto de Enseñanza superior N°6023 Dr. Alfredo Loutaif; Orán, Salta, comenzó a funcionar el 8 de Agosto de 1983 y por resolucion interna se identifica al establecimiento con el nombre Alfredo Loutaif, en virtud de su reciente fallecimiento y al reconocimiento por su colaboracion y actuacion en el campo educativo, especialmente a nivel Educacion Especial y en la creación de este instituto de formacion docente. 
+A partir del 19 de Agosto de 1985 comienza a funcionar en 9 de Julio 786 con dos carreras, desde esa fecha el establecimiento pasó por diferentes espacios fisicos de diversas instituciones de la ciudad. En 2013 se inaugura el edificio propio en Salvador Valleri esquina O’Higgins, con actividades en tres turnos y dictando actualmente seis carreras diferentes, cuatro profesorados y dos tecnicaturas.</p>
+
+
+<div class="historia-imgs">
+  <img src="IMG/loutaif.webp" alt="Edificio antiguo del instituto">
+  <img src="IMG/images.jpeg" alt="Edificio actual del instituto">
+</div>
+
+<div class="timeline">
+  <div><span>1983</span> – Fundación del Instituto</div>
+  <div><span>1985</span> – Traslado al edificio de 9 de Julio 786 con dos carreras</div>
+  <div><span>2013</span> – Inauguración del edificio actual</div>
+</div>
+
+</section>
+
+<!-- ===========================
+      DATOS INSTITUCIONALES  
+=========================== -->
+<section class="datos-institucionales">
+  <h2><i class="fa-solid fa-school"></i> Datos Institucionales</h2>
+  <ul>
+    <li><strong>Nombre:</strong> Instituto de Educación Superior N°6023</li>
+    <li><strong>Domicilio:</strong> O´higgins esquina Salvador Valeri</li>
+    <li><strong>Teléfono:</strong> +54 3878 78-5320</li>
+    <li><strong>Email:</strong> formacion6023@hotmail.com</li>
+    <li><strong>Horario de atención:</strong> Lunes a Viernes de 7:45 a 23:00</li>
+  </ul>
+</section>
+
+<!-- ===========================
+      DIRECTIVOS  
+=========================== -->
+<section class="directivos">
+  <h2><i class="fa-solid fa-users"></i> Directivos</h2>
+
+  <div class="grid-directivos">
+
+    <div class="card-persona"><strong>Rectora:</strong> Prof. Andrea Gorena</div>
+
+    <div class="card-persona"><strong>Primaria:</strong> Paola Mercado</div>
+    <div class="card-persona"><strong>Especial:</strong> Silvina López</div>
+    <div class="card-persona"><strong>Lengua y Literatura:</strong> María del Huerto Heredia</div>
+    <div class="card-persona"><strong>Turismo:</strong> Mercedes Manzaras</div>
+    <div class="card-persona"><strong>Sistemas:</strong> Mauricio Parada</div>
+
+  </div>
+
+  <h3 style="margin-top:30px;">Preceptoría</h3>
+  <ul>
+    <li><i class="fa-solid fa-user"></i> Natalia Romero – Mañana</li>
+    <li><i class="fa-solid fa-user"></i> Alejandra Cazón – Tarde</li>
+    <li><i class="fa-solid fa-user"></i> Betiana Casasola – Tarde</li>
+    <li><i class="fa-solid fa-user"></i> Marta Mansilla – Noche</li>
+  </ul>
+
+  <h3>Personal de Maestranza</h3>
+  <ul>
+    <li><i class="fa-solid fa-user"></i>Raúl Baez</li>
+    <li><i class="fa-solid fa-user"></i>Elida Segundo</li>
+    <li><i class="fa-solid fa-user"></i>Claudio Mansilla</li>
+    <li><i class="fa-solid fa-user"></i>Andrea Bermejo</li>
+    <li><i class="fa-solid fa-user"></i>Cesar Baez</li>
+    <li><i class="fa-solid fa-user"></i>Sonia Chima</li>
+    <li><i class="fa-solid fa-user"></i>Gustavo Torres</li>
+  </ul>
+
+  <h3>Sereno</h3>
+  <ul>
+    <li><i class="fa-solid fa-user"></i>Adrian Martínez</li>
+  </ul>
+
+</section>
+<section class="galeria-personal">
+  <h2><i class="fa-solid fa-images"></i> Nuestro Equipo</h2>
+
+  <div class="grid-galeria">
+    <img src="IMG/profes.jpg" alt="Personal del instituto">
+    <img src="IMG/coordis.jpg" alt="Personal del instituto">
+    <img src="IMG/ordenanza.jpg" alt="Personal del instituto">
+    <img src="IMG/coordis2.jpg" alt="Personal del instituto">
+  </div>
+</section>
+
+
+
+
+<!-- ===========================
+      MISIÓN Y VISIÓN  
+=========================== -->
+<section class="mision-vision">
+  <h2><i class="fa-solid fa-bullseye"></i> Misión y Visión</h2>
+
+  <p><strong>Misión:</strong> Formar profesionales comprometidos con el desarrollo social, enfocados en una educación inclusiva y de calidad.</p>
+
+  <p><strong>Visión:</strong> Ser un referente regional en formación docente y técnica, promoviendo innovación, investigación y compromiso social.</p>
+</section>
+
+</main>
+
 <footer>
-    <div class="footer-info">
-      <p>© 2025 Instituto de Enseñanza Superior Dr. Alfredo Loutaif N°6023. Todos los derechos reservados.</p>
-      <p>Diseño y desarrollo por el equipo del Instituto.</p>
-    </div>
-   <div class="footer-redes">
+  <div class="footer-info">
+    <p>© 2025 Instituto de Enseñanza Superior Dr. Alfredo Loutaif N°6023. Todos los derechos reservados.</p>
+    <p>Diseño y desarrollo por el equipo del Instituto.</p>
+  </div>
 
-    <div class="footer-redes">
-      <img src="IMG/icons8-facebook-50.png" alt="icono_facebook" width="30" class="iconos"><a href="https://web.facebook.com/loutaif6023?locale=es_LA">Facebook</a> |
-      <img src="IMG/icons8-instagram-50.png" alt="icono_instagram" width="30" class="iconos"><a href="https://www.instagram.com/loutaiforan/">Instagram</a> |
-      <img src="IMG/iconoblanco.png" alt="icono_instituto" width="30" class="iconos"><a href="ies6023-sal.infd.edu.ar/">IES6023 (Pagina Oficial)</a>
-    </div>
-  </footer>
+  <div class="footer-redes">
+    <img src="IMG/icons8-facebook-50.png" width="30"> 
+    <a href="https://web.facebook.com/loutaif6023?locale=es_LA">Facebook</a> |
+    <img src="IMG/icons8-instagram-50.png" width="30">
+    <a href="https://www.instagram.com/loutaiforan/">Instagram</a> |
+    <img src="IMG/iconoblanco.png" width="30">
+    <a href="ies6023-sal.infd.edu.ar/">Página Oficial</a>
+  </div>
+</footer>
 
-    
 </body>
 </html>
