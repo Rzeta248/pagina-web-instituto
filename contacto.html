@@ -6,6 +6,159 @@
     <link rel="icon" href="IMG/logofinal.PNG">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+      /* ==== SECCIÓN CONTACTO ==== */
+.contacto-seccion {
+  background: #001855;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contacto-header i {
+  font-size: 2.5em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.contacto-header h2 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contacto-header p {
+  font-size: 1.1em;
+  color: #e9f3ff;
+  margin-bottom: 40px;
+}
+
+/* ==== Contenido principal ==== */
+.contacto-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+  
+}
+
+/* ==== Tarjetas de información ==== */
+.contacto-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  min-width: 250px;
+}
+
+.info-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(136, 58, 58, 0.3);
+}
+
+.info-card i {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.info-card h3 {
+  margin-bottom: 8px;
+  font-size: 1.2em;
+}
+
+.info-card p {
+  color: #f0f0f0;
+  font-size: 1em;
+}
+
+/* ==== Formulario ==== */
+.contacto-formulario {
+  background: #ffffff;
+  color: #333;
+  flex: 1;
+  min-width: 300px;
+  max-width: 450px;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.2);
+}
+
+.contacto-formulario h3 {
+  color: #0078d7;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.contacto-formulario input,
+.contacto-formulario textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  transition: 0.3s;
+}
+
+.contacto-formulario input:focus,
+.contacto-formulario textarea:focus {
+  border-color: #0078d7;
+  box-shadow: 0 0 6px rgba(0,120,215,0.3);
+  outline: none;
+}
+
+.contacto-formulario button {
+  width: 100%;
+  padding: 12px;
+  background: #0078d7;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease, transform 0.3s ease;
+}
+
+.contacto-formulario button:hover {
+  background: #005fa3;
+  transform: scale(1.05);
+}
+
+/* ==== Mapa ==== */
+.contacto-mapa {
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* ==== Responsividad ==== */
+@media (max-width: 768px) {
+  .contacto-contenido {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacto-formulario {
+    width: 90%;
+  }
+}
+
+    </style>
 </head>
 <body>
     <header>
@@ -26,7 +179,7 @@
     </nav>
   </header>
 <!-- ==== SECCIÓN CONTACTO ==== -->
-<section id="contacto" class="contacto-seccion">
+<section  class="contacto-seccion">
   <div class="contacto-header">
     <i class="fa-solid fa-envelope-open-text"></i>
     <h2>Contacto</h2>

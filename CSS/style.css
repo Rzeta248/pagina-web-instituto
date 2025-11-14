@@ -1,4 +1,6 @@
-/* ---------------- ESTILOS GENERALES ---------------- */
+/* ========================
+   BODY: Estilo general
+======================== */
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
@@ -28,7 +30,9 @@ body::before {
   100% { background-position: 0% 50%; }
 }
 
-/* ---------------- HEADER ---------------- */
+/* ========================
+   HEARDER : Estilo del encabezado
+======================== */
 header {
   background: white;
   color: #001855;
@@ -59,7 +63,9 @@ header h1 {
   font-weight: 600;
 }
 
-/* ---------------- NAV ---------------- */
+/* ========================
+   NAVEGACIÓN: Estilo del menú de navegación
+======================== */
 nav ul {
   list-style: none;
   display: flex;
@@ -97,7 +103,9 @@ nav a:hover::after {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ---------------- PRESENTACIÓN ---------------- */
+/* ========================
+   PRESENTACION: Estilo de la sección de presentación
+======================== */
 #presentacion {
   text-align: center;
   color: white;
@@ -136,7 +144,9 @@ nav a:hover::after {
   transform: scale(1.05);
 }
 
-/* ---------------- OFERTA ACADÉMICA ---------------- */
+/* ========================
+   OFERTA ACADÉMICA: Estilo de la sección de oferta académica
+======================== */
 #oferta-academica {
   background-color: #ffffff;
   padding: 80px 20px;
@@ -189,7 +199,9 @@ nav a:hover::after {
   color: #001855;
 }
 
-/* ---------------- NOVEDADES ---------------- */
+/* ========================
+   NOVEDADES
+======================== */
 #novedades {
   /*background: linear-gradient(120deg, #EBDCB5, #ffffff);*/
   padding: 10px 20px;
@@ -216,7 +228,9 @@ nav a:hover::after {
   transform: translateY(-4px);
 }
 
-/* ---------------- NOSOTROS ---------------- */
+/* ========================
+  NOSOTROS
+======================== */
 /* ---- SOBRE NOSOTROS ---- */
 
 #nosotros {
@@ -269,12 +283,14 @@ nav a:hover::after {
 
 
 /* ---------------- CONTACTO ---------------- */
-/* ==== Estilo general de la sección de contacto ==== */
+/* ==== Estilo general de la sección de contacto ==== 
 .contacto-seccion {
-  background: rgb(1, 11, 66);
+  background: rgb(1, 9, 53);
   color: white;
   padding: 60px 20px;
   text-align: center;
+  border-radius: 15px;
+  max-width: 1000px;
 }
 
 .contacto-header i {
@@ -296,16 +312,17 @@ nav a:hover::after {
   margin-bottom: 40px;
 }
 
-/* ==== Contenido principal ==== */
+/* ==== Contenido principal ==== 
 .contacto-contenido {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
   margin-bottom: 40px;
+  background: #001855;
 }
 
-/* ==== Tarjetas de información ==== */
+/* ==== Tarjetas de información ==== 
 .contacto-info {
   display: flex;
   flex-direction: column;
@@ -344,7 +361,7 @@ nav a:hover::after {
   font-size: 1em;
 }
 
-/* ==== Formulario de contacto ==== */
+/* ==== Formulario de contacto ==== 
 .contacto-formulario {
   background: #ffffff;
   color: #333;
@@ -400,7 +417,7 @@ nav a:hover::after {
   transform: scale(1.05);
 }
 
-/* ==== Mapa ==== */
+/* ==== Mapa ==== 
 .contacto-mapa {
   max-width: 900px;
   margin: 0 auto;
@@ -408,7 +425,7 @@ nav a:hover::after {
   overflow: hidden;
 }
 
-/* ==== Responsividad ==== */
+/* ==== Responsividad ==== 
 @media (max-width: 768px) {
   .contacto-contenido {
     flex-direction: column;
@@ -418,8 +435,10 @@ nav a:hover::after {
     width: 90%;
   }
 }
-
-/* ---------------- FOOTER ---------------- */
+-------*/
+/* ========================
+   FOOTER: Estilo del pie de página
+======================== */
 footer {
   font-family: "Montserrat", sans-serif;
   background-color: #001855;
@@ -458,7 +477,9 @@ footer .footer-redes a:hover {
   vertical-align: middle;
   margin-right: 5px;
 }
-
+/* ========================
+   CARRERAS: Estilo de la sección de carreras
+======================== */
 .info-carrera h2{ text-align: center;
       margin-bottom: 40px;
       color: #093d6e;
@@ -503,7 +524,9 @@ section h2 {
   color: #1f4e79;
 }
 
-/* Estilo general de tablas */
+/* ========================
+   DISEÑO DE TABLAS
+======================== */
 .diseño_de_tabla {
   width: 100%;
   border-collapse: collapse;
@@ -556,7 +579,9 @@ section h2 {
       scroll-snap-align: start;
       border-radius: 8px;
     } ------*/
-       /* ==== Estilo general de la sección de inscripciones ==== */
+/* ========================
+   INSCRIPCIONES
+======================== */
 .seccion-inscripciones {
   background: linear-gradient(135deg, #001855, #001855);
   color: white;
@@ -693,7 +718,9 @@ section h2 {
     padding: 25px;
   }
 }
-/*--------- APARTADO DE CARRERAS -------------*/
+/* ========================
+  CARRERAS QUE TENEMOS PARA OFRECER 2025
+======================== */
 /* Sección general */
 .carreras-2025 {
   display: flex;
@@ -818,7 +845,7 @@ section h2 {
     width: 80%;
   }
 }
-<<<<<<< HEAD
+/* ---------------- GALERÍA DE IMÁGENES ---------------- */
 .galeria h3{
   text-align: center;
   font-size: 2rem;
@@ -826,8 +853,41 @@ section h2 {
   color: #1f4e79;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-=======
+/* ---- CONTACTO ---- */
 
+#contacto {
+  padding: 40px 20px;
+  background: #f7f7f7;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 40px auto;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+#contacto p {
+  font-size: 1.1rem;
+  margin: 8px 0;
+  text-align: center;
+}
+/* Contenedor responsive del mapa */
+.mapa-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* Proporción 16:9 */
+  border-radius: 12px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+.mapa-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
 /* Noticias */
 
 #noticia img{
@@ -865,41 +925,4 @@ section h2 {
   scroll-snap-align: center;
 }
 
-/* ---- CONTACTO ---- */
 
-#contacto {
-  padding: 40px 20px;
-  background: #f7f7f7;
-  border-radius: 12px;
-  max-width: 900px;
-  margin: 40px auto;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
-}
-
-#contacto p {
-  font-size: 1.1rem;
-  margin: 8px 0;
-  text-align: center;
-}
-
-/* Contenedor responsive del mapa */
-.mapa-container {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  padding-top: 56.25%; /* Proporción 16:9 */
-  border-radius: 12px;
-  margin-top: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.15);
-}
-
-.mapa-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
->>>>>>> 6a5d50acbde721696185c043b17ad637cd1281f4
